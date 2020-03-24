@@ -3,67 +3,59 @@
 		<title>SongSync</title>
 		<link rel="icon" type="image/png" href="images/logo.png">
 		<style>
-			html {
-				font-family: Arial, Helvetica, sans-serif;
-				font-size:40;
-				background-color: #1a1a1a;
-				color: #e6e6e6;
+			body {
+				background-color: #e6e6e6;
 			}
-			
-			#container {
-				top:0;
-				left:0;
-				right:0;
-				bottom:0;
-				position: absolute;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-			
-			.content, .headerContent {
-				display:inline-block;
-			}
-			
-			#actualContent {
-				background-image: linear-gradient(to bottom left, #3bffff,#6dffa2,#3bffff,#6dffa2,#3bffff);
-				background-size: 200%,100%;
-				background-repeat: repeat-x;
-				background-clip:text;
-				-webkit-background-clip: text;
 
-				animation-name: MoveGradient;
-				animation-duration: 45s;
-				animation-timing-function: ease;
-				animation-iteration-count: infinite;
+			#container {
 				max-width:1250px;
 			}
 
-			@keyframes MoveGradient {
-				0%	{background-position: 0%,0%;}
-				50%	{background-position: 400%,800%;}
-				100%	{background-position: 0%,0%;}
-			}
-			
 			a {
-				color: transparent;
-				text-decoration: underline;
+				color: #0099ff;
 				background-color:clear;
+				text-shadow:none;
+				text-decoration:none;
+			}
+
+			#header, #message {
+				margin-left:20px;
+				margin-top:20px;
+				margin-right:20px;
+				margin-bottom:20px;
+				font-family: Arial, helvetica, sans-serif;
+				color: #1a1a1a;
+				color:clear;
+				font-size: 50px;
 			}
 
 			a:hover {
 				color:#ff6666;
-				background-color: #1a1a1a;
-			}
+				text-decoration: underline;
+			}		
 			
+			#header {
+				display:flex;
+				align-items:center;
+				justify-content:left;
+				height:100px;
+			}
 		</style>
 	</head>
 	<body>
 		<div id="container">
-			<img class="content" src="images/heroImage.png" style="height:85%">
-			<div id="actualContent" id="content" style="margin-left:40px">
-				<h1 id="title">SongSync</h1>
-				<p id="description" style="margin-top:-30px">A big redesign is coming.<br><a href="https://www.twitter.com/@jwhamilton_">Stay tuned</a>.</p>
+			<div id="header">
+				<img src="images/logo.png" height="75px" style="margin-right:10px" class="headerContent"/>
+				<p class="headerContent"><b>SongSync</b></p>
+			</div>
+			<div id="message">
+				<p>I regret to inform you that SongSync has been canceled, and is no longer in development.</p>
+				<p>From the start, I had high hopes for SongSync. I started work on it in August of 2019 as a simple <a href="https://glitch.com/">Glitch</a> app, and it quickly started to grow in both size and amount of effort required.</p>
+				<p>As the semester progressed and new projects came about, I found myself working on SongSync less and less frequently. Now, with a new semester underway, my <a href="https://www.femtoeditor.com">other app</a> demanding more attention, and now COVID-19 putting my state in lockdown, I realized I have too much on my plate.</p>
+				<p>Furthermore, this project was way too ambitious for me to take on myself. I didn't want to force my way through and deliver a subpar experience.</p>
+				<p>I recently realized that I hadn't worked on SongSync on months. Instead of leaving the project in limbo, I wanted to give it a proper sendoff.</p>
+				<p>Thank you to everyone who believed in me and in the project. I hope you understand my decision.</p>
+				<p>- <a href="https://www.twitter.com/jwhamilton_">Justin</a></p>
 			</div>
 		</div>
 	</body>
